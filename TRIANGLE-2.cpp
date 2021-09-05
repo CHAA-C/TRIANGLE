@@ -6,7 +6,7 @@ int main()
 	printf("Enter your three numbers to find a triangle area EX: 3 4 5: ");
 	scanf("%f %f %f", &A, &B, &C);
 	
-	if( A == B && A == C && B == C )
+	if( A == B && A == C && B == C && A > 0 && B > 0 && C > 0 )
 	{
 		area = sqrt(3)/4*(A * A);
 		printf("\n%.2f",area);
@@ -22,6 +22,6 @@ int main()
 			printf("\n0");
 	}
 	else 
-		printf("0");
+		printf("\n0");
 	return 0;
 }
